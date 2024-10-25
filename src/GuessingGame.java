@@ -8,6 +8,7 @@ public class GuessingGame {
 
         int randomNum = rand.nextInt(100);
         System.out.println("Hello and welcome to the amazing Guessing game!\nTry to guess a random number with fewer attempts as possible!");
+        System.out.println("If you would like to quit, type \"quit\".");
 
 
         int n = 0;
@@ -50,7 +51,7 @@ public class GuessingGame {
             else {
 
                 String invalidInput = scan.next();
-                System.out.println("Error: '" + invalidInput + "' is not a valid number.");
+                System.out.println("Error: '" + invalidInput + " is not a valid number.");
 
             }
 
