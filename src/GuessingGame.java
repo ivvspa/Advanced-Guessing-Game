@@ -54,6 +54,7 @@ public class GuessingGame {
                 String invalidInput = scan.next();
                 System.out.println("Error: '" + invalidInput + " is not a valid number.");
                 System.out.println("Try not breaking the game next time.");
+                System.exit(0);
 
             }
 
