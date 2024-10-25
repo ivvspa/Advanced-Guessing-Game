@@ -7,8 +7,9 @@ public class GuessingGame {
         Scanner scan = new Scanner(System.in);
 
         int randomNum = rand.nextInt(100);
-        System.out.println("Hello and welcome to the amazing Guessing game!\nTry to guess a random number with fewer attempts as possible!");
+        System.out.println("Hello and welcome to the amazing Guessing game!\nTry to guess a random number with as few attempts as possible!");
         System.out.println("If you would like to quit, type \"quit\".");
+
 
 
         int n = 0;
@@ -43,7 +44,7 @@ public class GuessingGame {
 
             else if (scan.hasNext() && scan.next().equals("quit")) {
 
-                System.out.println("Really? Well, OK, see you soon! \nOh, by the way, it was " + randomNum);
+                System.out.println("Really? Welp, see you soon! \nOh, by the way, it was " + randomNum);
                 System.exit(0);
 
             }
@@ -52,6 +53,7 @@ public class GuessingGame {
 
                 String invalidInput = scan.next();
                 System.out.println("Error: '" + invalidInput + " is not a valid number.");
+                System.out.println("Try not breaking the game next time.");
 
             }
 
